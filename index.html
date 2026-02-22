@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romeo13_card | Android ROM Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0f1115;
+  --card:#6a36bf;
+  --accent:#cfcfcf;
+  --accent-soft:#221f2a;
+  --text:#ffffff;
+  --text-soft:#b0b3b8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f1115,#141824);
+  color:var(--text);
+  padding:40px 20px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+header{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:auto;
+  box-shadow:0 0 40px rgba(76,175,80,0.4);
+  transition:0.3s;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.avatar:hover{
+  transform:scale(1.05);
+}
+
+h1{
+  margin-top:20px;
+  font-size:32px;
+}
+
+.subtitle{
+  color:var(--text-soft);
+  margin-top:10px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+h2{
+  margin-bottom:15px;
+  font-size:20px;
+  color:var(--accent);
+}
+
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.devices-list li,
+.social-list li{
+  margin-bottom:8px;
+  color:var(--text-soft);
+}
+
+.rom-box{
+  background:var(--accent-soft);
+  padding:15px;
+  border-radius:15px;
+  margin-bottom:10px;
+}
+
+footer{
+  text-align:center;
+  margin-top:40px;
+  color:var(--text-soft);
+  font-size:14px;
+}
+.rom-button-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:15px;
+}
+
+.rom-button{
+  background:var(--accent);
+  color:#000;
+  padding:14px 28px;
+  border-radius:50px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+  box-shadow:0 6px 20px rgba(76,175,80,0.4);
+}
+
+.rom-button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(76,175,80,0.6);
+}
+
+.rom-button:active{
+  transform:scale(0.97);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+<div class="avatar">
+  <img src="avatar.jpg" alt="Romeo13_card avatar">
+</div>
+  <h1>Romeo13_card</h1>
+  <p class="subtitle">Android ROM Developer • Linux • PC Hardware</p>
+</header>
+
+<div class="card">
+  <h2>Обо мне</h2>
+  <p>Привет! Меня зовут Даниил, мне 16 лет.  
+  Увлекаюсь разработкой кастомных прошивок для Android, Linux и PC hardware.  
+  На этой странице собраны мои сборки для <strong>Redmi 10C</strong>.</p>
+</div>
+
+<div class="card">
+  <h2>Мои прошивки</h2>
+
+  <div class="rom-button-wrapper">
+    <a href="#" target="_blank" class="rom-button">
+      Перейти к репозиторию прошивок
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Мои устройства</h2>
+  <ul class="devices-list">
+    <li><strong>Redmi 10C (fog)</strong> — Основное устройство для разработки ROM</li>
+    <li><strong>Redmi 6A (rain)</strong> — Первое устройство для экспериментов</li>
+    <li><strong>Redmi Pad SE (wind)</strong> — Тестирование на планшетах</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:romeo_13card_fan@outlook.com">romeo_13card_fan@outlook.com</a></p>
+</div>
+
+<div class="card">
+  <h2>Социальные сети</h2>
+  <ul class="social-list">
+    <li>Telegram — <a href="https://t.me/Romeo_13card" target="_blank">t.me/Romeo_13card</a></li>
+    <li>VK — <a href="https://vk.com/romeo_13card_fan" target="_blank">vk.com/romeo_13card_fan</a></li>
+    <li>GitHub — <a href="https://github.com/Romeo13card" target="_blank">github.com/Romeo13card</a></li>
+    <li>4PDA — <a href="https://4pda.to/forum/index.php?showuser=11309990" target="_blank">4PDA профиль</a></li>
+  </ul>
+</div>
+
+<footer>
+  © 2026 Romeo13_card • Android ROM Development
+</footer>
+
+</div>
+</body>
+</html>
